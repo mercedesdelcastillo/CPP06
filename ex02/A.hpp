@@ -1,24 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   A.hpp                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: medel-ca <medel-ca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/07/29 11:16:45 by medel-ca          #+#    #+#             */
-/*   Updated: 2026/07/29 11:18:59 by medel-ca         ###   ########.fr       */
+/*   Created: 2026/07/29 13:06:45 by medel-ca          #+#    #+#             */
+/*   Updated: 2026/07/29 13:07:32 by medel-ca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ScalarConverter.hpp"
+#ifndef A_HPP
+# define A_HPP
+# include "Base.hpp"
 
-int main(int ac, char *av[])
+class A : public Base
 {
-	if(ac != 2)
-	{
-		std::cout << "You need to pass 1 parameter" << std::endl;
-		return 1;
-	}
-	ScalarConverter::convert(av[1]);
-	return 0;
-}
+
+};
+
+#endif

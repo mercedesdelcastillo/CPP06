@@ -1,40 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   convert.h                                          :+:      :+:    :+:   */
+/*   Base.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: medel-ca <medel-ca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/07/29 11:16:35 by medel-ca          #+#    #+#             */
-/*   Updated: 2026/07/29 11:22:03 by medel-ca         ###   ########.fr       */
+/*   Created: 2026/07/29 12:52:02 by medel-ca          #+#    #+#             */
+/*   Updated: 2026/07/29 15:49:51 by medel-ca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CONVERT_H
-# define CONVERT_H
+#ifndef BASE_HPP
+# define BASE_HPP
 # include <iostream>
-# include <string>
-# include <cstdlib>
-# include <cerrno>
-# include <climits>
-# include <cfloat>
-# include <sstream>
-# include <limits>
 
-enum LiteralType
+class Base
 {
-    CHAR,
-    INT,
-    FLOAT,
-    DOUBLE,
-	PSEUDO,
-    INVALID
+    public:
+        virtual ~Base();
 };
 
-int define_type(std::string value);
-void cast_to_char(std::string value);
-void cast_to_int(std::string value);
-void cast_to_double(std::string value);
-void print_int(long n);
+Base * generate(void);
+void identify(Base* p);
+void identify(Base& p);
 
 #endif

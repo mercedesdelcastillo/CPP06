@@ -5,20 +5,31 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: medel-ca <medel-ca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/07/29 11:16:45 by medel-ca          #+#    #+#             */
-/*   Updated: 2026/07/29 11:18:59 by medel-ca         ###   ########.fr       */
+/*   Created: 2026/07/29 12:07:40 by medel-ca          #+#    #+#             */
+/*   Updated: 2026/07/29 15:51:44 by medel-ca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ScalarConverter.hpp"
+#include "Base.hpp"
+#include <cstdlib>
 
-int main(int ac, char *av[])
+int main()
 {
-	if(ac != 2)
-	{
-		std::cout << "You need to pass 1 parameter" << std::endl;
-		return 1;
-	}
-	ScalarConverter::convert(av[1]);
-	return 0;
+    srand((unsigned)time(0));
+    
+    Base *ret = generate();
+    Base *ret1 = generate();
+    Base *ret2 = generate();
+    Base *ret3 = generate();
+    
+    identify(ret);
+    identify(*ret);
+    identify(ret1);
+    identify(*ret1);
+    identify(ret2);
+    identify(*ret2);
+    identify(ret3);
+    identify(*ret3);
+    
+    return 0;
 }

@@ -1,24 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Data.h                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: medel-ca <medel-ca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/07/29 11:16:45 by medel-ca          #+#    #+#             */
-/*   Updated: 2026/07/29 11:18:59 by medel-ca         ###   ########.fr       */
+/*   Created: 2026/07/29 11:49:56 by medel-ca          #+#    #+#             */
+/*   Updated: 2026/07/29 11:50:38 by medel-ca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ScalarConverter.hpp"
+#ifndef DATA_H
+# define DATA_H
+#include <iostream>
 
-int main(int ac, char *av[])
+typedef struct Data
 {
-	if(ac != 2)
-	{
-		std::cout << "You need to pass 1 parameter" << std::endl;
-		return 1;
-	}
-	ScalarConverter::convert(av[1]);
-	return 0;
-}
+    int num;
+    char c;
+    std::string name;
+} Data;
+
+#endif
