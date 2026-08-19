@@ -6,7 +6,7 @@
 /*   By: medel-ca <medel-ca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/29 11:16:35 by medel-ca          #+#    #+#             */
-/*   Updated: 2026/07/29 11:22:03 by medel-ca         ###   ########.fr       */
+/*   Updated: 2026/08/14 12:05:48 by medel-ca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@
 # include <cstdlib>
 # include <cerrno>
 # include <climits>
-# include <cfloat>
 # include <sstream>
 # include <limits>
+# include <cfloat>
 
 enum LiteralType
 {

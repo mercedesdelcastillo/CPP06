@@ -6,7 +6,7 @@
 /*   By: medel-ca <medel-ca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/29 11:17:01 by medel-ca          #+#    #+#             */
-/*   Updated: 2026/07/29 11:17:09 by medel-ca         ###   ########.fr       */
+/*   Updated: 2026/08/14 12:19:14 by medel-ca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ class ScalarConverter
     
     //Public Methods
     public:
-        static void convert(std::string value);        
+        static void convert(std::string value); 
 };
 
 #endif
